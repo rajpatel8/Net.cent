@@ -1,0 +1,72 @@
+<!--create a responsive page for image and text-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image img{
+            width: 100%;
+            height: 100%;
+        }
+        .text{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .text h1{
+            font-size: 50px;
+            color: #000;
+            text-align: center;
+        }
+        .text p{
+            font-size: 20px;
+            color: #000;
+            text-align: center;
+        }
+        @media screen and (max-width: 768px){
+            .container{
+                flex-direction: column;
+            }
+            .image{
+                width: 100%;
+                height: 50%;
+            }
+            .text{
+                width: 100%;
+                height: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="1.jpg" alt="image">
+        </div>
+        <div class="text">
+            <h1>Responsive Page</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatibus, voluptatum. Accusantium, adipisci, alias, aliquid asperiores atque autem blanditiis consequatur cumque cupiditate delectus doloremque doloribus ea earum eius eligendi eos error est eum eveniet ex excepturi exercitationem expedita explicabo facere facilis fugiat fugit hic id illum impedit in incidunt ipsa ipsum iure laboriosam laborum libero magnam magni maiores maxime molestiae molestias mollitia natus nemo neque nihil nisi nobis nostrum nulla numquam obcaecati officia officiis omnis optio pariatur perferendis perspiciatis placeat porro possimus praesentium provident quae quas quia quibusdam quisquam quod quos ratione recusandae rem repellat reprehenderit repudiandae rerum saepe sapiente sequi similique sint sit soluta sunt suscipit tempora temporibus tenetur totam ullam unde ut vel veniam veritatis voluptas voluptate voluptatem voluptates voluptatibus voluptatum. Ab, accusamus, adipisci.</p>
+        </div>
+    </div>
+</body>
+
+</html>
