@@ -55,6 +55,42 @@
                 height: 50%;
             }
         }
+
+        /* <!-- Logical Operators in Media Queries --> */
+        @media  all  and (min-width: 768px) , (max-width: 1024px)
+        {
+            /* <!-- CSS rules for viewports that are 768px or wider but no wider than 1024px --> */
+            
+        }
+        @media not screen and (color) {
+            /* <!-- CSS rules for devices that are not color devices --> */
+
+        }
+        @media only screen and (orientation: portrait) {
+            /* <!-- CSS rules for devices that are in portrait orientation --> */
+            /* change color of text */
+            .text h1{
+                color: red;
+            }
+            .container{
+                background-color: #000
+            }
+            .text p{
+                color: #fff;
+            }
+            
+        }
+       /* pixel ratio for high defination screen */
+       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3) 
+       {
+            /* <!-- CSS rules for high-density screens --> */
+            /* .text h1{
+                color: green;
+            } */
+       } 
+
+        
+
     </style>
 </head>
 <body>
@@ -69,4 +105,4 @@
     </div>
 </body>
 
-</html>
+</html> 
